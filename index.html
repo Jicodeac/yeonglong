@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>영롱 YEONGLONG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Noto+Serif+KR:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">영롱</a>
+    <div class="nav-links">
+      <a href="#regions">지역</a>
+      <a href="#story">이야기</a>
+      <a href="#ciodel">씨오델</a>
+      <a href="#celestiana">셀레스티아나</a>
+      <a href="#mirvela">미르벨라</a>
+      <a href="#etherian">에테리안</a>
+    </div>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+  </nav>
+
+  <!-- ========== HERO / LANDING ========== -->
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <p class="hero-pre">S I S T I A &nbsp; I S L A N D</p>
+      <h1 class="hero-title">영롱</h1>
+      <p class="hero-sub">Y &nbsp; E &nbsp; O &nbsp; N &nbsp; G &nbsp; L &nbsp; O &nbsp; N &nbsp; G</p>
+      <div class="hero-divider"></div>
+      <p class="hero-desc">어딘가에 존재한다고 전해지는 신비의 섬,<br>그 빛이 닿은 곳에 네 개의 세계가 태어났습니다.</p>
+      <a href="#regions" class="hero-cta">세계를 탐험하다</a>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ========== BRAND STORY ========== -->
+  <section id="story" class="section">
+    <div class="container">
+      <p class="section-label">The Origin</p>
+      <h2 class="section-title">씨스탈린, 빛의 결정</h2>
+      <div class="story-grid">
+        <div class="story-text">
+          <p>시스티아 섬의 중심에는 <em>씨스탈린(Cistaline)</em>이라 불리는 고대 수정체가 잠들어 있습니다.</p>
+          <p>씨스탈린은 빛을 받으면 네 갈래로 갈라지며 각기 다른 빛을 내뿜고, 그 빛이 닿은 곳에 네 개의 지역이 생겨났습니다.</p>
+          <p>씨스탈린은 단순한 보석이 아닙니다.<br><strong>가치관과 신념의 결정체</strong>입니다.</p>
+          <p class="story-highlight">이 수정체의 파편을 지닌 자는,<br>그 빛이 담고 있는 가치를 몸에 새기게 됩니다.</p>
+        </div>
+        <div class="story-visual">
+          <div class="crystal-orb">
+            <div class="crystal-glow"></div>
+            <div class="crystal-inner"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOUR REGIONS OVERVIEW ========== -->
+  <section id="regions" class="section section-dark">
+    <div class="container">
+      <p class="section-label">Four Realms</p>
+      <h2 class="section-title">네 개의 빛, 네 개의 세계</h2>
+      <div class="regions-grid">
+
+        <a href="#ciodel" class="region-card" data-region="ciodel">
+          <div class="region-card-bg"></div>
+          <div class="region-card-content">
+            <span class="region-line">Classic Line</span>
+            <h3>씨오델</h3>
+            <p class="region-en">Ciodel</p>
+            <p class="region-desc">따뜻한 금빛, 안정된 광택.<br>우아함과 변하지 않는 아름다움.</p>
+          </div>
+        </a>
+
+        <a href="#celestiana" class="region-card" data-region="celestiana">
+          <div class="region-card-bg"></div>
+          <div class="region-card-content">
+            <span class="region-line">Petit Line</span>
+            <h3>셀레스티아나</h3>
+            <p class="region-en">Celestiana</p>
+            <p class="region-desc">부드러운 은빛, 달빛 같은 잔광.<br>섬세함과 작지만 빛나는 존재감.</p>
+          </div>
+        </a>
+
+        <a href="#mirvela" class="region-card" data-region="mirvela">
+          <div class="region-card-bg"></div>
+          <div class="region-card-content">
+            <span class="region-line">Bold Line</span>
+            <h3>미르벨라</h3>
+            <p class="region-en">Mirvela</p>
+            <p class="region-desc">강렬한 프리즘, 무지개빛 굴절.<br>대담함과 존재의 강렬함.</p>
+          </div>
+        </a>
+
+        <a href="#etherian" class="region-card" data-region="etherian">
+          <div class="region-card-bg"></div>
+          <div class="region-card-content">
+            <span class="region-line">Unique Line</span>
+            <h3>에테리안</h3>
+            <p class="region-en">Etherian</p>
+            <p class="region-desc">홀로그래픽, 비현실적 빛.<br>자유와 틀을 벗어난 존재.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCT PAGES ========== -->
+
+  <!-- CIODEL -->
+  <section id="ciodel" class="section product-section" data-theme="ciodel">
+    <div class="container">
+      <div class="product-header">
+        <span class="product-label">Classic Line</span>
+        <h2 class="product-region-name">씨오델 <span>Ciodel</span></h2>
+        <p class="product-region-desc">따뜻한 금빛이 감도는 이 땅에서, 우아함은 시간이 지나도 변하지 않습니다.<br>씨오델의 여신은 흔들리지 않는 아름다움을 지닌 자입니다.</p>
+        <div class="product-divider"></div>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-img" style="background: linear-gradient(135deg, #f0e6d3 0%, #e8dcc8 50%, #d4c4a8 100%);">
+            <div class="product-badge">Classic</div>
+          </div>
+          <div class="product-info">
+            <h3>오로라 펜던트</h3>
+            <p class="product-subtitle">Aurora Pendant</p>
+            <p class="product-desc">따뜻한 금빛 광택의 메인 펜던트. 씨스탈린의 첫 번째 빛을 담은 클래식 라인의 시그니처.</p>
+            <p class="product-material">14K 골드 / 담수진주 / 지르코니아</p>
+            <div class="product-bottom">
+              <span class="product-price">₩89,000</span>
+              <button class="product-btn">장바구니에 담기</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img" style="background: linear-gradient(135deg, #ece2d0 0%, #ddd0b8 50%, #c8b898 100%);">
+            <div class="product-badge">Classic</div>
+          </div>
+          <div class="product-info">
+            <h3>이터널 체인</h3>
+            <p class="product-subtitle">Eternal Chain</p>
+            <p class="product-desc">끊어지지 않는 빛의 고리. 변하지 않는 가치를 상징하는 섬세한 레이어드 체인.</p>
+            <p class="product-material">14K 골드 / 천연 자개</p>
+            <div class="product-bottom">
+              <span class="product-price">₩69,000</span>
+              <button class="product-btn">장바구니에 담기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="goddess-note">이 목걸이를 선택하는 순간, 당신은 <em>씨오델의 여신</em>이 됩니다.</p>
+    </div>
+  </section>
+
+  <!-- CELESTIANA -->
+  <section id="celestiana" class="section product-section" data-theme="celestiana">
+    <div class="container">
+      <div class="product-header">
+        <span class="product-label">Petit Line</span>
+        <h2 class="product-region-name">셀레스티아나 <span>Celestiana</span></h2>
+        <p class="product-region-desc">달빛이 물결 위에 내려앉듯, 셀레스티아나의 빛은 조용히 빛납니다.<br>셀레스티아나의 여신은 작지만 누구보다 빛나는 존재입니다.</p>
+        <div class="product-divider"></div>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-img" style="background: linear-gradient(135deg, #e8e4f0 0%, #dcd8ec 50%, #cec8e0 100%);">
+            <div class="product-badge">Petit</div>
+          </div>
+          <div class="product-info">
+            <h3>루나 드롭</h3>
+            <p class="product-subtitle">Luna Drop</p>
+            <p class="product-desc">달빛을 한 방울 떨어뜨린 듯한 물방울 펜던트. 은은한 잔광이 쇄골 위에 머무릅니다.</p>
+            <p class="product-material">925 실버 / 문스톤 / 큐빅</p>
+            <div class="product-bottom">
+              <span class="product-price">₩59,000</span>
+              <button class="product-btn">장바구니에 담기</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img" style="background: linear-gradient(135deg, #e0dce8 0%, #d4d0e4 50%, #c8c0d8 100%);">
+            <div class="product-badge">Petit</div>
+          </div>
+          <div class="product-info">
+            <h3>스텔라 참</h3>
+            <p class="product-subtitle">Stella Charm</p>
+            <p class="product-desc">밤하늘의 별을 닮은 미니 참. 셀레스티아나의 섬세한 빛을 손목 위에 새깁니다.</p>
+            <p class="product-material">925 실버 / 크리스탈</p>
+            <div class="product-bottom">
+              <span class="product-price">₩45,000</span>
+              <button class="product-btn">장바구니에 담기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="goddess-note">이 목걸이를 선택하는 순간, 당신은 <em>셀레스티아나의 여신</em>이 됩니다.</p>
+    </div>
+  </section>
+
+  <!-- MIRVELA -->
+  <section id="mirvela" class="section product-section" data-theme="mirvela">
+    <div class="container">
+      <div class="product-header">
+        <span class="product-label">Bold Line</span>
+        <h2 class="product-region-name">미르벨라 <span>Mirvela</span></h2>
+        <p class="product-region-desc">프리즘을 통과한 빛처럼, 미르벨라의 빛은 하나로 정의되지 않습니다.<br>미르벨라의 여신은 자기 자신을 의심하지 않는 자입니다.</p>
+        <div class="product-divider"></div>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-img" style="background: linear-gradient(135deg, #e8d8e0 0%, #e0c8d4 50%, #d8b8c8 100%);">
+            <div class="product-badge">Bold</div>
+          </div>
+          <div class="product-info">
+            <h3>프리즘 스테이트먼트</h3>
+            <p class="product-subtitle">Prism Statement</p>
+            <p class="product-desc">무지개빛으로 굴절되는 대담한 펜던트. 존재만으로 시선을 사로잡는 강렬함.</p>
+            <p class="product-material">14K 로즈골드 / 오팔 / 지르코니아</p>
+            <div class="product-bottom">
+              <span class="product-price">₩119,000</span>
+              <button class="product-btn">장바구니에 담기</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img" style="background: linear-gradient(135deg, #e4d0dc 0%, #dcc0d0 50%, #d0b0c4 100%);">
+            <div class="product-badge">Bold</div>
+          </div>
+          <div class="product-info">
+            <h3>래디언스 초커</h3>
+            <p class="product-subtitle">Radiance Choker</p>
+            <p class="product-desc">빛의 파동을 형상화한 볼드 초커. 자기 확신을 가진 여신의 갑옷.</p>
+            <p class="product-material">14K 로즈골드 / 컬러 지르코니아</p>
+            <div class="product-bottom">
+              <span class="product-price">₩139,000</span>
+              <button class="product-btn">장바구니에 담기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="goddess-note">이 목걸이를 선택하는 순간, 당신은 <em>미르벨라의 여신</em>이 됩니다.</p>
+    </div>
+  </section>
+
+  <!-- ETHERIAN -->
+  <section id="etherian" class="section product-section" data-theme="etherian">
+    <div class="container">
+      <div class="product-header">
+        <span class="product-label">Unique Line</span>
+        <h2 class="product-region-name">에테리안 <span>Etherian</span></h2>
+        <p class="product-region-desc">현실의 경계를 넘어선 빛. 에테리안의 빛은 어떤 틀에도 갇히지 않습니다.<br>에테리안의 여신은 자유 그 자체입니다.</p>
+        <div class="product-divider"></div>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-img" style="background: linear-gradient(135deg, #e0e4f0 0%, #d0d8ec 50%, #c0cce8 100%);">
+            <div class="product-badge">Unique</div>
+          </div>
+          <div class="product-info">
+            <h3>트랜센드 펜던트</h3>
+            <p class="product-subtitle">Transcend Pendant</p>
+            <p class="product-desc">홀로그래픽 빛을 가둔 초월의 펜던트. 보는 각도마다 다른 빛을 내뿜습니다.</p>
+            <p class="product-material">925 실버+14K / 홀로그램 코팅 / 랩그로운 다이아</p>
+            <div class="product-bottom">
+              <span class="product-price">₩159,000</span>
+              <button class="product-btn">장바구니에 담기</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img" style="background: linear-gradient(135deg, #dce0f0 0%, #ccd4ec 50%, #bcc8e8 100%);">
+            <div class="product-badge">Unique</div>
+          </div>
+          <div class="product-info">
+            <h3>인피니트 레이어</h3>
+            <p class="product-subtitle">Infinite Layer</p>
+            <p class="product-desc">무한히 겹치는 빛의 층위. 틀을 벗어난 존재를 위한 멀티 레이어드 목걸이.</p>
+            <p class="product-material">925 실버 / 오로라 크리스탈 / 체인</p>
+            <div class="product-bottom">
+              <span class="product-price">₩129,000</span>
+              <button class="product-btn">장바구니에 담기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="goddess-note">이 목걸이를 선택하는 순간, 당신은 <em>에테리안의 여신</em>이 됩니다.</p>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container">
+      <p class="footer-quote">"우리는 악세사리를 만들지 않습니다.<br>당신의 가치를 결정으로 빚습니다."</p>
+      <p class="footer-brand">영롱 &nbsp; Y E O N G L O N G</p>
+      <div class="footer-links">
+        <a href="#">Instagram</a>
+        <a href="#">Newsletter</a>
+        <a href="#">고객센터</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Yeonglong. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
